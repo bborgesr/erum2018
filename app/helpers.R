@@ -110,8 +110,7 @@ dat_metadata <- tibble(
 
 treemapified_dat <- function(dat) {
   treemapify(dat, 
-    area = "total", fill = "category", label = "subcategory", 
-    xlim = c(0, 1), ylim = c(0, 1)
+    area = "total", subgroup = "category", subgroup2 = "subcategory"
   )
 }
 

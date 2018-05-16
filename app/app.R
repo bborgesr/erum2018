@@ -198,7 +198,7 @@ server <- function(input, output, session) {
   observeEvent(input$main_plot_click, {
     tree_dat <- subcategory_dat() %>% treemapified_dat
     clicked_square <- getClickedPoint(tree_dat, input$main_plot_click)
-    clicked_label <- as.character(clicked_square[1, "label"])
+    clicked_label <- as.character(clicked_square[1, "subcategory"])
     outputID <- glue("dt-{clicked_label}")
     btnID <- glue("hide-{outputID}")
     
