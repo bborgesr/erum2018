@@ -30,7 +30,7 @@ sidebar <- dashboardSidebar(
 body <- dashboardBody(
   ## |_____persistent info --------------------------------------------------------------
   fluidRow(
-    column(8, helpText("Repo: github.com/bborgesr/rstudio-conf-2018")),
+    column(8, helpText("Repo: github.com/bborgesr/erum2018")),
     column(4, helpText("Data viewable at: goo.gl/aFLbFz"))
   ),
   fluidRow(
