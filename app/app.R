@@ -4,12 +4,12 @@ library(shinydashboard)
 library(tidyverse)
 library(glue)
 library(DT)
-library(googlesheets)
+library(readr)
 library(colourpicker)
 source("helpers.R")
 
-## DATA IMPORT (googlesheets) -----------------------------------------------------------
-dat <- gs_title("rstudio_conf_2018_BUDGET") %>% gs_read()
+## DATA IMPORT --------------------------------------------------------------------------
+dat <- read_csv("www/budget.csv")
 
 ## UI -----------------------------------------------------------------------------------
 ## |__sidebar ---------------------------------------------------------------------------
